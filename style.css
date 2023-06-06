@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 500px;
+    background: lightblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.accordionTitle {
+    display: flex;
+    justify-content: space-between;
+    color: steelblue
+}
+
+.toggleBtn {
+    outline: none;
+    border: none;
+    color: steelblue;
+    background: none;
+    font-size: 24px;
+}
+
+.toggleBtn i {
+    cursor: pointer;
+}
+
+.content {
+    border-top: 1px solid black;
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+.minusIcon, .plusIcon {
+    display: none;
+}
